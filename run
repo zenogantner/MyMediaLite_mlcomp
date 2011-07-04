@@ -10,5 +10,5 @@ if [ "$1" == "learn" ]; then
     mono --debug RatingPrediction.exe --training-file=$2 --recommender=BiasedMatrixFactorization --recommender-options="num_factors=20 bias_reg=0.001 regularization=0.055 learn_rate=0.01 num_iter=100" --save-model=model.txt
 fi
 if [ "$1" == "predict" ]; then
-    mono --debug RatingPrediction.exe --training-file=empty --test-file=$2 --prediction-file=$3 --load-model=model.txt
+    mono --debug RatingPrediction.exe --training-file=empty --test-file=$2 --prediction-file=$3 --load-model=model.txt --prediction-line="{2}"
 fi
