@@ -21,3 +21,5 @@ clean:
 	rm -f *.zip
 	rm -f run
 	rm -f hp.txt
+	rm -f model.txt
+	rm -f training_file

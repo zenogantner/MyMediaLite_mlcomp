@@ -22,7 +22,7 @@ elif [ "$1" == "learn" ]; then
     xargs --arg-file=hp.txt mono --debug RatingPrediction.exe --training-file=$2 --recommender=$recommender --recommender-options="reg_u=12 reg_i=2" --save-model=model.txt
     cp $2 training_file
 elif [ "$1" == "predict" ]; then
-    mono --debug RatingPrediction.exe --training-file=training_file --test-file=$2 --prediction-file=$3 --recommender=$recommender --load-model=model.txt --prediction-line=\"{2}\"
+    mono --debug RatingPrediction.exe --training-file=training_file --test-file=$2 --prediction-file=$3 --recommender=$recommender --load-model=model.txt --prediction-line="{2}"
 else
     echo Usage: $0 construct\|setHyperparameter\|learn\|predict
 fi

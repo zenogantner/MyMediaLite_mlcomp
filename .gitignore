@@ -1,3 +1,5 @@
 *.zip
 run
 hp.txt
+model.txt
+training_file
