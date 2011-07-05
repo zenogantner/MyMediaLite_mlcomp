@@ -1,0 +1,3 @@
+ - automated learning rate and hyperparameter search
+ - suggest item prediction task (positive-only + other) for mlcomp.org
+
