@@ -9,5 +9,5 @@ all: $(ZIP)
 	zip $@ *.dll *.mdb *.exe README run
 
 clean:
-	rm *.zip
-	rum run
+	rm -f *.zip
+	rm -f run
